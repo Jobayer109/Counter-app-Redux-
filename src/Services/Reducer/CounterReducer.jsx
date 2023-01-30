@@ -2,8 +2,8 @@ import { DECREMENT, INCREMENT, RESET } from "../Constants/Constants";
 
 const initialCounterState = { count: 0 };
 
-const counterReducer = (state = initialCounterState, action) => {
-  switch (action.key) {
+export const counterReducer = (state = initialCounterState, action) => {
+  switch (action.type) {
     case INCREMENT:
       return {
         ...state,
@@ -25,4 +25,4 @@ const counterReducer = (state = initialCounterState, action) => {
   }
 };
 
-export default counterReducer;
+// export default counterReducer;
